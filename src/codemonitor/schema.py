@@ -4,7 +4,7 @@ import os
 
 SCHEMA_VERSION = "codemonitor/1.0"
 
-def base_record(ts_ms: int, mark: str | None = None, extra: Dict[str, Any] | None = None) -> Dict[str, Any]:
+def base_record(ts_ms: int, mark: Optional[str] = None, extra: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     return {
         "schema": SCHEMA_VERSION,
         "ts_ms": ts_ms,

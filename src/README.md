@@ -5,9 +5,7 @@ Low-overhead CPU/RAM/GPU monitor for long-running jobs (e.g., docking).
 ## Install
 
 ```bash
-pip install git+https://github.com/<user>/codemonitor.git
-# or with GPU extras (NVML):
-pip install "codemonitor[gpu] @ git+https://github.com/<user>/codemonitor.git"
+pip install git+https://github.com/gn1793/codemonitor.git
 ```
 
 ## Quick start

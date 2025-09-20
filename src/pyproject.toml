@@ -1,0 +1,19 @@
+[project]
+name = "codemonitor"
+version = "0.1.0"
+description = "Low-overhead CPU/RAM/GPU monitor for long-running jobs"
+readme = "README.md"
+authors = [{name="Your Name"}]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+  "psutil>=5.9",
+]
+
+[project.optional-dependencies]
+gpu = ["nvidia-ml-py>=12"]
+dev = ["pytest", "mypy", "flake8"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
